@@ -3,315 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="logo.css">
-  <title>Privacy Policy - Memlum</title>
+  <title>Privacy Policy - Memlum Meditation</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
-    
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      color: #212121;
-      line-height: 1.7;
-      background: #FFFFFF;
+      background: #090909;
+      color: #f3f0e8;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
       min-height: 100vh;
     }
-    
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1.5rem 2rem;
-      background: #FFFFFF;
-    }
-    
-    .header-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      max-width: 900px;
-    }
-    
-    .logo-text {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #2196F3;
-      text-decoration: none;
-    }
-    
-    
+
     main {
-      max-width: 900px;
       margin: 0 auto;
-      padding: 2rem 2rem 4rem;
+      max-width: 780px;
+      padding: 2rem 1.25rem 3rem;
     }
-    
+
     .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: #757575;
+      color: #d8d2c6;
+      display: inline-block;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
       text-decoration: none;
-      font-size: 0.875rem;
-      margin-bottom: 2rem;
-      transition: color 0.2s ease;
     }
-    
+
     .back-link:hover {
-      color: #2196F3;
+      text-decoration: underline;
     }
-    
-    .back-link svg {
-      width: 16px;
-      height: 16px;
-    }
-    
+
     h1 {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #212121;
-      margin-bottom: 0.5rem;
-      line-height: 1.25;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 0.4rem;
     }
-    
+
     .effective-date {
-      color: #757575;
-      font-size: 0.875rem;
-      margin-bottom: 2rem;
+      color: #b8b0a3;
+      font-size: 0.92rem;
+      margin-bottom: 1.4rem;
     }
-    
+
     h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #212121;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      line-height: 1.3;
-    }
-    
-    h3 {
       font-size: 1.25rem;
-      font-weight: 600;
-      color: #212121;
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-      line-height: 1.3;
+      margin: 1.75rem 0 0.75rem;
     }
-    
-    ul {
-      margin-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    li {
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
-    }
-    
+
     p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #212121;
-      margin-bottom: 1rem;
+      color: #d8d2c6;
+      margin-bottom: 0.9rem;
     }
-    
+
+    ul {
+      color: #d8d2c6;
+      margin: 0.5rem 0 1rem 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .highlight {
+      border: 1px solid #2b2926;
+      border-radius: 10px;
+      margin: 1rem 0 1.5rem;
+      padding: 1rem;
+    }
+
     a {
-      color: #2196F3;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    
-    a:hover {
-      color: #1976D2;
-    }
-    
-    .footer-note {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid #E0E0E0;
-      color: #757575;
-      font-size: 0.875rem;
-    }
-    
-    .privacy-highlight {
-      background-color: #F5F5F5;
-      border-left: 4px solid #2196F3;
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 4px;
-    }
-    
-    .privacy-highlight p {
-      margin-bottom: 0;
-      color: #212121;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    
-    .privacy-highlight strong {
-      color: #2196F3;
-      font-weight: 600;
-    }
-    
-    @media (max-width: 768px) {
-      header {
-        padding: 1rem;
-      }
-      
-      .header-content {
-        max-width: 100%;
-      }
-      
-      main {
-        padding: 1.5rem 1.5rem 3rem;
-      }
-      
-      h1 {
-        font-size: 1.75rem;
-      }
-      
-      h2 {
-        font-size: 1.25rem;
-      }
-      
+      color: #f3f0e8;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <a href="index.html">
-          <span class="logo-text">Memlum</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  
   <main>
-    <a href="index.html" class="back-link">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      Back to Home
-    </a>
-    
+    <a class="back-link" href="index.html">Back to Home</a>
+
     <h1>Privacy Policy</h1>
-    <p class="effective-date">Effective date: December 2025</p>
+    <p class="effective-date">Effective date: May 2026</p>
 
     <p>
-      Memlum ("we", "our", or "us") respects your privacy and is committed 
-      to protecting it through this Privacy Policy.
+      Memlum Meditation ("we", "our", or "us") respects your privacy. This app is designed to work without accounts, cloud sync, or analytics.
     </p>
 
-    <h2>Information We Collect</h2>
-    <div class="privacy-highlight">
+    <div class="highlight">
       <p>
-        <strong>Your recordings stay private on your device.</strong>
-        All audio and video recordings are stored locally on your device and never transmitted to our servers.
+        <strong>Core promise:</strong> your meditation session data and app preferences stay on your device.
       </p>
     </div>
-    
-    <h3>Data Stored Locally (On Your Device)</h3>
+
+    <h2>What We Collect</h2>
     <p>
-      The following data is stored only on your device and never shared:
+      We do not collect personal data in the app itself.
     </p>
     <ul>
-      <li>Audio and video recordings</li>
-      <li>Recording titles and metadata</li>
-      <li>Recording file paths and durations</li>
+      <li>No account information</li>
+      <li>No session history sent to us</li>
+      <li>No analytics or advertising identifiers</li>
+      <li>No recording, camera, or location data</li>
     </ul>
-    
-    <h3>Data Stored in Cloud (Firestore)</h3>
+
+    <h2>What Is Stored On Device</h2>
     <p>
-      To enable sharing questions with family members, we store the following information in our cloud database (Firestore):
-    </p>
-    <ul>
-      <li>Question text (the questions you ask or receive) - <strong>encrypted</strong></li>
-      <li>Names (the names you provide when asking or answering questions) - <strong>encrypted</strong></li>
-      <li>Question status (whether a question has been answered)</li>
-      <li>Anonymous identifiers (random IDs generated per app installation to link questions and answers)</li>
-    </ul>
-    <p>
-      <strong>Important:</strong> Your actual recordings (audio/video files) are never stored in the cloud. Question text and names are encrypted using AES-256-GCM encryption before being stored in Firestore. The encryption keys are stored only on your device and the recipient's device, meaning <strong>only the question sender and receiver can decrypt and read the question text and names</strong>. We (the developers) cannot read this encrypted data.
-    </p>
-    
-    <h3>Anonymous Usage Data</h3>
-    <p>
-      We may collect anonymous usage data (such as which features you use most, app performance metrics, and general usage patterns) to improve the app's performance and features. This data does not include any personal recordings or identifiable information.
+      To make the app usable between launches, it stores a few local preferences such as selected duration and sound toggles. These preferences stay on your phone.
     </p>
 
-    <h2>How We Use Your Data</h2>
+    <h2>Audio</h2>
     <p>
-      <strong>Question and Name Data:</strong> Question text and names stored in Firestore are encrypted and used solely to enable the question-sharing feature, allowing family members to send and receive questions through the app. Because the data is encrypted and we do not have access to the decryption keys, we cannot read the question text or names.
-    </p>
-    <p>
-      <strong>Anonymous Usage Data:</strong> Helps us understand how people use Memlum and improve the app experience. No personal recordings or identifiable content is included.
-    </p>
-    <p>
-      <strong>Recordings:</strong> Your audio and video recordings remain on your device and are never transmitted to our servers or shared with third parties.
+      The meditation drone and ending chime are bundled in the app package and played locally. No streaming is required after install.
     </p>
 
     <h2>Permissions</h2>
     <p>
-      The app requires permission to use your device's microphone and camera 
-      only to record audio and video. These recordings are stored locally on your device 
-      and never transmitted to our servers unless you explicitly choose to share them 
-      using your device's native sharing features.
-    </p>
-
-    <h2>Your Rights and Choices</h2>
-    <p>
-      <strong>Recordings:</strong> You have full control over your recordings. You may delete, 
-      edit, or share recordings at any time. Recordings remain on your device and are never 
-      automatically synced to the cloud.
-    </p>
-    <p>
-      <strong>Question Data:</strong> Questions and names stored in Firestore are associated 
-      with your device. You can delete questions you've asked directly in the app. Questions 
-      you've received can be dismissed from your view, though they may remain accessible to 
-      the person who asked them.
-    </p>
-    <p>
-      <strong>Data Deletion:</strong> You can delete recordings and questions you've asked 
-      directly in the app at any time. If you need to delete other data or have questions about 
-      data deletion, please contact us.
-    </p>
-
-    <h2>Data Security</h2>
-    <p>
-      We use industry-standard security measures to protect data stored in Firestore. 
-      All data transmission is encrypted using HTTPS. Question text and names are encrypted 
-      using AES-256-GCM encryption before being stored in Firestore. Encryption keys are stored 
-      only on user devices (never in Firestore), ensuring that only the question sender and 
-      receiver can decrypt and read the content. Your recordings stored locally on your device 
-      are protected by your device's security features.
+      The release app is configured to avoid camera, microphone, storage, contacts, location, notification, and network-related permissions.
     </p>
 
     <h2>Third-Party Services</h2>
     <p>
-      We use Firebase (Google) to store question and name data in Firestore. Firebase 
-      is subject to Google's privacy policy. We do not use third-party services to collect, 
-      store, or process your audio or video recordings.
+      We do not use third-party analytics or advertising SDKs for user tracking in the app.
     </p>
 
-    <h2>Contact Us</h2>
+    <h2>Contact</h2>
     <p>
-      If you have questions about this Privacy Policy, please contact us at 
-      <a href="mailto:awsagataha@gmail.com">awsagataha@gmail.com</a>.
+      If you have privacy questions, contact: <a href="mailto:awsagataha@gmail.com">awsagataha@gmail.com</a>
     </p>
-
-    <p class="footer-note">Thank you for trusting Memlum to help preserve your family's legacy.</p>
   </main>
 </body>
 </html>
